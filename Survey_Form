@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="Survey_Form.css">
+    </head>
+    <body>
+        <form id="Survey_Form">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out this form</p>
+
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="number">Age (optional)</label>
+            <input type="number" id="number" name="number" placeholder="Enter your age" min="18" max="120">
+
+            <label>Wich skills do you have:</label>
+            <div id="skills">
+                <div class="skills">
+                    <input type="checkbox" id="html" name="html" value="skills">
+                    <label for="html">HTML</label>
+                </div>
+                <div class="skills">
+                    <input type="checkbox" id="css" name="css" value="skills">
+                    <label for="css">CSS</label>
+                </div>
+                <div class="skills">
+                    <input type="checkbox" id="java" name="java" value="skills">
+                    <label for="java">JavaScript</label>
+                </div>
+            </div>
+            <label>Contact Preferred:</label>
+             <div id="contact">
+               <div class="contact">
+                 <input type="radio" id="email" name="email" value="contact">
+                 <label for="email">Email</label>
+               </div>
+               <div class="contact">
+                 <input type="radio" id="phone" name="phone" value="contact">
+                 <label for="phone">Phone</label>
+               </div>
+            </div>
+            <label for="comments">Comments:</label>
+            <textarea id="comment" name="comments" placeholder="Enter your comments here" rows="4" cols="50"></textarea>
+            <button id="submit" type="submit">submit</button>
+        </form>
+    </body>
+</html>
